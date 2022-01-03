@@ -1,0 +1,17 @@
+DAC0# = EN + A4 + A3 + A2
+DAC1# = EN + A4 + A3 + /A2
+DAC2# = EN + A4 + /A3 + A2
+DAC3# = EN + A4 + /A3 + /A2
+DAC4# = EN + /A4 + A3 + A2
+
+NOR
+001
+010
+100
+110
+
+NAND
+001
+011
+101
+110

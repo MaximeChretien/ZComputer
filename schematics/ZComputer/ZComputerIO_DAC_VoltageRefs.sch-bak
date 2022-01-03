@@ -1,0 +1,513 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 16
+Title "ZComputer I/O DAC Voltage References"
+Date "2021-10-21"
+Rev "v1.0"
+Comp "Maxime Chretien"
+Comment1 "mchretien@linuxmail.org"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LMC6484 U?
+U 1 1 62346EB0
+P 6200 2000
+AR Path="/60F234C1/61687857/62346EB0" Ref="U?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/62346EB0" Ref="U32"  Part="1" 
+F 0 "U32" H 6200 2367 50  0000 C CNN
+F 1 "LMC6484" H 6200 2276 50  0000 C CNN
+F 2 "" H 6150 2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6484.pdf" H 6250 2200 50  0001 C CNN
+	1    6200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LMC6484 U?
+U 3 1 62346EB6
+P 6200 3550
+AR Path="/60F234C1/61687857/62346EB6" Ref="U?"  Part="3" 
+AR Path="/60F234C1/61687857/622FBA08/62346EB6" Ref="U32"  Part="3" 
+F 0 "U32" H 6200 3917 50  0000 C CNN
+F 1 "LMC6484" H 6200 3826 50  0000 C CNN
+F 2 "" H 6150 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6484.pdf" H 6250 3750 50  0001 C CNN
+	3    6200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62346EBC
+P 5100 2100
+AR Path="/60F234C1/61687857/62346EBC" Ref="R?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/62346EBC" Ref="R9"  Part="1" 
+F 0 "R9" H 5170 2146 50  0000 L CNN
+F 1 "10k" H 5170 2055 50  0000 L CNN
+F 2 "" V 5030 2100 50  0001 C CNN
+F 3 "~" H 5100 2100 50  0001 C CNN
+	1    5100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62346EC2
+P 5450 2100
+AR Path="/60F234C1/61687857/62346EC2" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/62346EC2" Ref="C35"  Part="1" 
+F 0 "C35" H 5565 2146 50  0000 L CNN
+F 1 "100n" H 5565 2055 50  0000 L CNN
+F 2 "" H 5488 1950 50  0001 C CNN
+F 3 "~" H 5450 2100 50  0001 C CNN
+	1    5450 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2000 6600 2000
+Wire Wire Line
+	6600 2000 6600 2300
+Wire Wire Line
+	6600 2300 5800 2300
+Wire Wire Line
+	5800 2300 5800 2100
+Wire Wire Line
+	5800 2100 5900 2100
+$Comp
+L Device:R R?
+U 1 1 62346ECD
+P 4800 2100
+AR Path="/60F234C1/61687857/62346ECD" Ref="R?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/62346ECD" Ref="R8"  Part="1" 
+F 0 "R8" H 4870 2146 50  0000 L CNN
+F 1 "10k" H 4870 2055 50  0000 L CNN
+F 2 "" V 4730 2100 50  0001 C CNN
+F 3 "~" H 4800 2100 50  0001 C CNN
+	1    4800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62346ED3
+P 4500 2100
+AR Path="/60F234C1/61687857/62346ED3" Ref="R?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/62346ED3" Ref="R7"  Part="1" 
+F 0 "R7" H 4570 2146 50  0000 L CNN
+F 1 "10k" H 4570 2055 50  0000 L CNN
+F 2 "" V 4430 2100 50  0001 C CNN
+F 3 "~" H 4500 2100 50  0001 C CNN
+	1    4500 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1900 4500 1950
+Wire Wire Line
+	4800 1950 4800 1900
+Connection ~ 4800 1900
+Wire Wire Line
+	4800 1900 4500 1900
+Wire Wire Line
+	5100 1950 5100 1900
+Connection ~ 5100 1900
+Wire Wire Line
+	5100 1900 4800 1900
+Wire Wire Line
+	5450 1950 5450 1900
+Connection ~ 5450 1900
+Wire Wire Line
+	5450 1900 5100 1900
+Wire Wire Line
+	5450 2250 5450 2350
+Wire Wire Line
+	4500 2350 4500 2250
+Wire Wire Line
+	4800 2250 4800 2350
+Wire Wire Line
+	5100 2250 5100 2350
+$Comp
+L Device:R R?
+U 1 1 62346EE7
+P 4250 1900
+AR Path="/60F234C1/61687857/62346EE7" Ref="R?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/62346EE7" Ref="R6"  Part="1" 
+F 0 "R6" V 4350 1850 50  0000 L CNN
+F 1 "10k" V 4150 1850 50  0000 L CNN
+F 2 "" V 4180 1900 50  0001 C CNN
+F 3 "~" H 4250 1900 50  0001 C CNN
+	1    4250 1900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4800 2350
+Connection ~ 5100 2350
+Wire Wire Line
+	4800 2350 4950 2350
+Wire Wire Line
+	5100 2350 5450 2350
+Wire Wire Line
+	4500 2350 4800 2350
+Wire Wire Line
+	5450 1900 5900 1900
+Wire Wire Line
+	4400 1900 4500 1900
+Connection ~ 4500 1900
+Text HLabel 4000 1900 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	4100 1900 4000 1900
+Text HLabel 4950 2450 3    50   Input ~ 0
+GND
+Wire Wire Line
+	4950 2350 4950 2450
+Connection ~ 4950 2350
+Wire Wire Line
+	4950 2350 5100 2350
+Connection ~ 6600 2000
+Text Label 7100 2000 2    50   ~ 0
+1.25V_REF0
+Wire Wire Line
+	6600 2000 7100 2000
+$Comp
+L Device:R R?
+U 1 1 62346EFE
+P 5100 3650
+AR Path="/60F234C1/61687857/62346EFE" Ref="R?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/62346EFE" Ref="R17"  Part="1" 
+F 0 "R17" H 5170 3696 50  0000 L CNN
+F 1 "10k" H 5170 3605 50  0000 L CNN
+F 2 "" V 5030 3650 50  0001 C CNN
+F 3 "~" H 5100 3650 50  0001 C CNN
+	1    5100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62346F04
+P 5450 3650
+AR Path="/60F234C1/61687857/62346F04" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/62346F04" Ref="C37"  Part="1" 
+F 0 "C37" H 5565 3696 50  0000 L CNN
+F 1 "100n" H 5565 3605 50  0000 L CNN
+F 2 "" H 5488 3500 50  0001 C CNN
+F 3 "~" H 5450 3650 50  0001 C CNN
+	1    5450 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3550 6600 3550
+Wire Wire Line
+	6600 3550 6600 3850
+Wire Wire Line
+	6600 3850 5800 3850
+Wire Wire Line
+	5800 3850 5800 3650
+Wire Wire Line
+	5800 3650 5900 3650
+$Comp
+L Device:R R?
+U 1 1 62346F0F
+P 4800 3650
+AR Path="/60F234C1/61687857/62346F0F" Ref="R?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/62346F0F" Ref="R16"  Part="1" 
+F 0 "R16" H 4870 3696 50  0000 L CNN
+F 1 "10k" H 4870 3605 50  0000 L CNN
+F 2 "" V 4730 3650 50  0001 C CNN
+F 3 "~" H 4800 3650 50  0001 C CNN
+	1    4800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62346F15
+P 4500 3650
+AR Path="/60F234C1/61687857/62346F15" Ref="R?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/62346F15" Ref="R15"  Part="1" 
+F 0 "R15" H 4570 3696 50  0000 L CNN
+F 1 "10k" H 4570 3605 50  0000 L CNN
+F 2 "" V 4430 3650 50  0001 C CNN
+F 3 "~" H 4500 3650 50  0001 C CNN
+	1    4500 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3450 4500 3500
+Wire Wire Line
+	4800 3500 4800 3450
+Connection ~ 4800 3450
+Wire Wire Line
+	4800 3450 4500 3450
+Wire Wire Line
+	5100 3500 5100 3450
+Connection ~ 5100 3450
+Wire Wire Line
+	5100 3450 4800 3450
+Wire Wire Line
+	5450 3500 5450 3450
+Connection ~ 5450 3450
+Wire Wire Line
+	5450 3450 5100 3450
+Wire Wire Line
+	5450 3800 5450 3900
+Wire Wire Line
+	4500 3900 4500 3800
+Wire Wire Line
+	4800 3800 4800 3900
+Wire Wire Line
+	5100 3800 5100 3900
+$Comp
+L Device:R R?
+U 1 1 62346F29
+P 4250 3450
+AR Path="/60F234C1/61687857/62346F29" Ref="R?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/62346F29" Ref="R14"  Part="1" 
+F 0 "R14" V 4350 3400 50  0000 L CNN
+F 1 "10k" V 4150 3400 50  0000 L CNN
+F 2 "" V 4180 3450 50  0001 C CNN
+F 3 "~" H 4250 3450 50  0001 C CNN
+	1    4250 3450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4800 3900
+Connection ~ 5100 3900
+Wire Wire Line
+	4800 3900 4950 3900
+Wire Wire Line
+	5100 3900 5450 3900
+Wire Wire Line
+	4500 3900 4800 3900
+Wire Wire Line
+	5450 3450 5900 3450
+Wire Wire Line
+	4400 3450 4500 3450
+Connection ~ 4500 3450
+Text HLabel 4000 3450 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	4100 3450 4000 3450
+Text HLabel 4950 4000 3    50   Input ~ 0
+GND
+Wire Wire Line
+	4950 3900 4950 4000
+Connection ~ 4950 3900
+Wire Wire Line
+	4950 3900 5100 3900
+Connection ~ 6600 3550
+Text Label 7100 3550 2    50   ~ 0
+1.25V_REF2
+Wire Wire Line
+	6600 3550 7100 3550
+$Comp
+L Amplifier_Operational:LMC6484 U?
+U 2 1 6236A483
+P 6200 5100
+AR Path="/60F234C1/61687857/6236A483" Ref="U?"  Part="2" 
+AR Path="/60F234C1/61687857/622FBA08/6236A483" Ref="U32"  Part="2" 
+F 0 "U32" H 6200 5467 50  0000 C CNN
+F 1 "LMC6484" H 6200 5376 50  0000 C CNN
+F 2 "" H 6150 5200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6484.pdf" H 6250 5300 50  0001 C CNN
+	2    6200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6236A489
+P 5100 5200
+AR Path="/60F234C1/61687857/6236A489" Ref="R?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/6236A489" Ref="R13"  Part="1" 
+F 0 "R13" H 5170 5246 50  0000 L CNN
+F 1 "10k" H 5170 5155 50  0000 L CNN
+F 2 "" V 5030 5200 50  0001 C CNN
+F 3 "~" H 5100 5200 50  0001 C CNN
+	1    5100 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6236A48F
+P 5450 5200
+AR Path="/60F234C1/61687857/6236A48F" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/6236A48F" Ref="C36"  Part="1" 
+F 0 "C36" H 5565 5246 50  0000 L CNN
+F 1 "100n" H 5565 5155 50  0000 L CNN
+F 2 "" H 5488 5050 50  0001 C CNN
+F 3 "~" H 5450 5200 50  0001 C CNN
+	1    5450 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 5100 6600 5100
+Wire Wire Line
+	6600 5100 6600 5400
+Wire Wire Line
+	6600 5400 5800 5400
+Wire Wire Line
+	5800 5400 5800 5200
+Wire Wire Line
+	5800 5200 5900 5200
+$Comp
+L Device:R R?
+U 1 1 6236A49A
+P 4800 5200
+AR Path="/60F234C1/61687857/6236A49A" Ref="R?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/6236A49A" Ref="R12"  Part="1" 
+F 0 "R12" H 4870 5246 50  0000 L CNN
+F 1 "10k" H 4870 5155 50  0000 L CNN
+F 2 "" V 4730 5200 50  0001 C CNN
+F 3 "~" H 4800 5200 50  0001 C CNN
+	1    4800 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6236A4A0
+P 4500 5200
+AR Path="/60F234C1/61687857/6236A4A0" Ref="R?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/6236A4A0" Ref="R11"  Part="1" 
+F 0 "R11" H 4570 5246 50  0000 L CNN
+F 1 "10k" H 4570 5155 50  0000 L CNN
+F 2 "" V 4430 5200 50  0001 C CNN
+F 3 "~" H 4500 5200 50  0001 C CNN
+	1    4500 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5000 4500 5050
+Wire Wire Line
+	4800 5050 4800 5000
+Connection ~ 4800 5000
+Wire Wire Line
+	4800 5000 4500 5000
+Wire Wire Line
+	5100 5050 5100 5000
+Connection ~ 5100 5000
+Wire Wire Line
+	5100 5000 4800 5000
+Wire Wire Line
+	5450 5050 5450 5000
+Connection ~ 5450 5000
+Wire Wire Line
+	5450 5000 5100 5000
+Wire Wire Line
+	5450 5350 5450 5450
+Wire Wire Line
+	4500 5450 4500 5350
+Wire Wire Line
+	4800 5350 4800 5450
+Wire Wire Line
+	5100 5350 5100 5450
+$Comp
+L Device:R R?
+U 1 1 6236A4B4
+P 4250 5000
+AR Path="/60F234C1/61687857/6236A4B4" Ref="R?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/6236A4B4" Ref="R10"  Part="1" 
+F 0 "R10" V 4350 4950 50  0000 L CNN
+F 1 "10k" V 4150 4950 50  0000 L CNN
+F 2 "" V 4180 5000 50  0001 C CNN
+F 3 "~" H 4250 5000 50  0001 C CNN
+	1    4250 5000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4800 5450
+Connection ~ 5100 5450
+Wire Wire Line
+	4800 5450 4950 5450
+Wire Wire Line
+	5100 5450 5450 5450
+Wire Wire Line
+	4500 5450 4800 5450
+Wire Wire Line
+	5450 5000 5900 5000
+Wire Wire Line
+	4400 5000 4500 5000
+Connection ~ 4500 5000
+Text HLabel 4000 5000 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	4100 5000 4000 5000
+Text HLabel 4950 5550 3    50   Input ~ 0
+GND
+Wire Wire Line
+	4950 5450 4950 5550
+Connection ~ 4950 5450
+Wire Wire Line
+	4950 5450 5100 5450
+Connection ~ 6600 5100
+Text Label 7100 5100 2    50   ~ 0
+1.25V_REF1
+Wire Wire Line
+	6600 5100 7100 5100
+$Comp
+L Amplifier_Operational:LMC6484 U?
+U 5 1 623CB4AF
+P 1750 1950
+AR Path="/60F234C1/61687857/623CB4AF" Ref="U?"  Part="5" 
+AR Path="/60F234C1/61687857/622FBA08/623CB4AF" Ref="U32"  Part="5" 
+F 0 "U32" H 1708 1996 50  0000 L CNN
+F 1 "LMC6484" H 1708 1905 50  0000 L CNN
+F 2 "" H 1700 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6484.pdf" H 1800 2150 50  0001 C CNN
+	5    1750 1950
+	1    0    0    -1  
+$EndComp
+Text HLabel 1650 1500 1    50   Input ~ 0
+VCC
+$Comp
+L Device:C C?
+U 1 1 623CB4B6
+P 1450 1950
+AR Path="/60F2447D/623CB4B6" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61663605/623CB4B6" Ref="C?"  Part="1" 
+AR Path="/60F234C1/623CB4B6" Ref="C?"  Part="1" 
+AR Path="/60F234C1/616ECCD6/623CB4B6" Ref="C?"  Part="1" 
+AR Path="/60F234C1/616ECC31/623CB4B6" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61687857/623CB4B6" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61687857/622FBA08/623CB4B6" Ref="C34"  Part="1" 
+F 0 "C34" H 1250 2000 50  0000 C CNN
+F 1 "100n" H 1250 1900 50  0000 C CNN
+F 2 "" H 1488 1800 50  0001 C CNN
+F 3 "~" H 1450 1950 50  0001 C CNN
+	1    1450 1950
+	1    0    0    -1  
+$EndComp
+Text HLabel 1650 2400 3    50   Input ~ 0
+GND
+Wire Wire Line
+	1650 1500 1650 1600
+Wire Wire Line
+	1650 1600 1450 1600
+Wire Wire Line
+	1450 1600 1450 1800
+Connection ~ 1650 1600
+Wire Wire Line
+	1650 1600 1650 1650
+Wire Wire Line
+	1450 2100 1450 2300
+Wire Wire Line
+	1450 2300 1650 2300
+Wire Wire Line
+	1650 2300 1650 2250
+Wire Wire Line
+	1650 2400 1650 2300
+Connection ~ 1650 2300
+Text Label 2000 3400 2    50   ~ 0
+1.25V_REF0
+Wire Wire Line
+	1500 3400 2000 3400
+Text Label 2000 3500 2    50   ~ 0
+1.25V_REF1
+Wire Wire Line
+	1500 3500 2000 3500
+Text Label 2000 3600 2    50   ~ 0
+1.25V_REF2
+Wire Wire Line
+	1500 3600 2000 3600
+Text HLabel 1500 3400 0    50   Output ~ 0
+1.25V_REF0
+Text HLabel 1500 3500 0    50   Output ~ 0
+1.25V_REF1
+Text HLabel 1500 3600 0    50   Output ~ 0
+1.25V_REF2
+$EndSCHEMATC

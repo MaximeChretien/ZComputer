@@ -1,0 +1,615 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 16
+Title "ZComputer I/O DAC Address decoding"
+Date "2021-10-21"
+Rev "v1.0"
+Comp "Maxime Chretien"
+Comment1 "mchretien@linuxmail.org"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC02 U?
+U 1 1 61766865
+P 3700 2650
+AR Path="/60F234C1/61687857/61766865" Ref="U?"  Part="1" 
+AR Path="/60F234C1/61687857/6175863C/61766865" Ref="U35"  Part="1" 
+F 0 "U35" H 3700 2975 50  0000 C CNN
+F 1 "74HC02" H 3700 2884 50  0000 C CNN
+F 2 "" H 3700 2650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 3700 2650 50  0001 C CNN
+	1    3700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC02 U?
+U 2 1 6176686B
+P 3700 3200
+AR Path="/60F234C1/61687857/6176686B" Ref="U?"  Part="2" 
+AR Path="/60F234C1/61687857/6175863C/6176686B" Ref="U35"  Part="2" 
+F 0 "U35" H 3700 3525 50  0000 C CNN
+F 1 "74HC02" H 3700 3434 50  0000 C CNN
+F 2 "" H 3700 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 3700 3200 50  0001 C CNN
+	2    3700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC02 U?
+U 3 1 61766871
+P 3700 3750
+AR Path="/60F234C1/61687857/61766871" Ref="U?"  Part="3" 
+AR Path="/60F234C1/61687857/6175863C/61766871" Ref="U35"  Part="3" 
+F 0 "U35" H 3700 4075 50  0000 C CNN
+F 1 "74HC02" H 3700 3984 50  0000 C CNN
+F 2 "" H 3700 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 3700 3750 50  0001 C CNN
+	3    3700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC02 U?
+U 4 1 61766877
+P 3700 4300
+AR Path="/60F234C1/61687857/61766877" Ref="U?"  Part="4" 
+AR Path="/60F234C1/61687857/6175863C/61766877" Ref="U35"  Part="4" 
+F 0 "U35" H 3700 4625 50  0000 C CNN
+F 1 "74HC02" H 3700 4534 50  0000 C CNN
+F 2 "" H 3700 4300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 3700 4300 50  0001 C CNN
+	4    3700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC02 U?
+U 5 1 6176687D
+P 2250 6750
+AR Path="/60F234C1/61687857/6176687D" Ref="U?"  Part="5" 
+AR Path="/60F234C1/61687857/6175863C/6176687D" Ref="U35"  Part="5" 
+F 0 "U35" H 2480 6796 50  0000 L CNN
+F 1 "74HC02" H 2480 6705 50  0000 L CNN
+F 2 "" H 2250 6750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 2250 6750 50  0001 C CNN
+	5    2250 6750
+	1    0    0    -1  
+$EndComp
+Text Label 1200 1600 2    50   ~ 0
+A4
+Text Label 1200 1500 2    50   ~ 0
+A3
+Text HLabel 1050 1500 0    50   Input ~ 0
+A3
+Text HLabel 1050 1600 0    50   Input ~ 0
+A4
+Wire Wire Line
+	1050 1600 1200 1600
+Wire Wire Line
+	1200 1500 1050 1500
+Text Label 1200 1400 2    50   ~ 0
+A2
+Text HLabel 1050 1400 0    50   Input ~ 0
+A2
+Wire Wire Line
+	1200 1400 1050 1400
+Text HLabel 1050 1800 0    50   Input ~ 0
+EN#
+Wire Wire Line
+	1400 1800 1050 1800
+Text Label 1400 1800 2    50   ~ 0
+EN#
+Text Label 2900 4300 0    50   ~ 0
+EN#
+Text Label 2900 3750 0    50   ~ 0
+A4
+Text Label 2900 3200 0    50   ~ 0
+A3
+Text Label 2900 2650 0    50   ~ 0
+A2
+Wire Wire Line
+	3400 2550 3300 2550
+Wire Wire Line
+	3300 2550 3300 2650
+Wire Wire Line
+	3300 2750 3400 2750
+Wire Wire Line
+	2900 2650 3300 2650
+Connection ~ 3300 2650
+Wire Wire Line
+	3300 2650 3300 2750
+Wire Wire Line
+	3400 3100 3300 3100
+Wire Wire Line
+	3300 3100 3300 3200
+Wire Wire Line
+	3300 3300 3400 3300
+Wire Wire Line
+	2900 3200 3300 3200
+Connection ~ 3300 3200
+Wire Wire Line
+	3300 3200 3300 3300
+Wire Wire Line
+	3400 3650 3300 3650
+Wire Wire Line
+	3300 3650 3300 3750
+Wire Wire Line
+	3300 3850 3400 3850
+Wire Wire Line
+	2900 3750 3300 3750
+Connection ~ 3300 3750
+Wire Wire Line
+	3300 3750 3300 3850
+Wire Wire Line
+	3400 4200 3300 4200
+Wire Wire Line
+	3300 4200 3300 4300
+Wire Wire Line
+	3300 4400 3400 4400
+Wire Wire Line
+	2900 4300 3300 4300
+Connection ~ 3300 4300
+Wire Wire Line
+	3300 4300 3300 4400
+Wire Wire Line
+	4000 2650 4300 2650
+Text Label 4300 2650 2    50   ~ 0
+A2#
+Wire Wire Line
+	4000 3200 4300 3200
+Text Label 4300 3200 2    50   ~ 0
+A3#
+Wire Wire Line
+	4000 3750 4300 3750
+Text Label 4300 3750 2    50   ~ 0
+A4#
+Wire Wire Line
+	4000 4300 4300 4300
+Text Label 4300 4300 2    50   ~ 0
+EN
+$Comp
+L Perso:74HC32 U36
+U 1 1 617BF74F
+P 7150 1900
+F 0 "U36" H 7150 2225 50  0000 C CNN
+F 1 "74HC32" H 7150 2134 50  0000 C CNN
+F 2 "" H 7150 1900 50  0001 C CNN
+F 3 "" H 7150 1900 50  0001 C CNN
+	1    7150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Perso:74HC32 U36
+U 2 1 617C079F
+P 8050 2200
+F 0 "U36" H 8050 2525 50  0000 C CNN
+F 1 "74HC32" H 8050 2434 50  0000 C CNN
+F 2 "" H 8050 2200 50  0001 C CNN
+F 3 "" H 8050 2200 50  0001 C CNN
+	2    8050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Perso:74HC32 U36
+U 3 1 617C4232
+P 7150 2500
+F 0 "U36" H 7150 2825 50  0000 C CNN
+F 1 "74HC32" H 7150 2734 50  0000 C CNN
+F 2 "" H 7150 2500 50  0001 C CNN
+F 3 "" H 7150 2500 50  0001 C CNN
+	3    7150 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Perso:74HC32 U36
+U 4 1 617C6955
+P 8050 2800
+F 0 "U36" H 8050 3125 50  0000 C CNN
+F 1 "74HC32" H 8050 3034 50  0000 C CNN
+F 2 "" H 8050 2800 50  0001 C CNN
+F 3 "" H 8050 2800 50  0001 C CNN
+	4    8050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Perso:74HC32 U36
+U 5 1 617C864A
+P 3300 6750
+F 0 "U36" H 3530 6796 50  0000 L CNN
+F 1 "74HC32" H 3530 6705 50  0000 L CNN
+F 2 "" H 3300 6750 50  0001 C CNN
+F 3 "" H 3300 6750 50  0001 C CNN
+	5    3300 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2900 7650 2900
+Wire Wire Line
+	7650 2900 7650 3100
+Wire Wire Line
+	7650 3100 7550 3100
+Wire Wire Line
+	7750 2700 7650 2700
+Wire Wire Line
+	7650 2700 7650 2500
+Wire Wire Line
+	7650 2500 7450 2500
+Text Label 8750 2800 2    50   ~ 0
+DAC0_EN#
+Wire Wire Line
+	8750 2800 8350 2800
+Text Label 6550 3000 0    50   ~ 0
+A4
+Text Label 6550 2600 0    50   ~ 0
+A3
+Text Label 6550 2400 0    50   ~ 0
+A2
+Wire Wire Line
+	6550 2400 6850 2400
+Wire Wire Line
+	6550 2600 6850 2600
+Wire Wire Line
+	6550 3000 6850 3000
+Wire Wire Line
+	6850 3200 6550 3200
+Text Label 6550 3200 0    50   ~ 0
+EN
+$Comp
+L Perso:74HC32 U37
+U 1 1 6175D597
+P 7150 3100
+F 0 "U37" H 7150 3425 50  0000 C CNN
+F 1 "74HC32" H 7150 3334 50  0000 C CNN
+F 2 "" H 7150 3100 50  0001 C CNN
+F 3 "" H 7150 3100 50  0001 C CNN
+	1    7150 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3500 7650 3700
+Wire Wire Line
+	7650 3300 7750 3300
+Wire Wire Line
+	7750 3500 7650 3500
+Wire Wire Line
+	7650 3700 7450 3700
+Wire Wire Line
+	7650 3100 7650 3300
+Connection ~ 7650 3100
+Text Label 6550 3800 0    50   ~ 0
+A3
+Text Label 6550 3600 0    50   ~ 0
+A2#
+Wire Wire Line
+	6550 3600 6850 3600
+Wire Wire Line
+	6550 3800 6850 3800
+Text Label 8750 3400 2    50   ~ 0
+DAC1_EN#
+Wire Wire Line
+	8750 3400 8350 3400
+$Comp
+L Perso:74HC32 U37
+U 2 1 6178C3A8
+P 8050 3400
+F 0 "U37" H 8050 3725 50  0000 C CNN
+F 1 "74HC32" H 8050 3634 50  0000 C CNN
+F 2 "" H 8050 3400 50  0001 C CNN
+F 3 "" H 8050 3400 50  0001 C CNN
+	2    8050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Perso:74HC32 U37
+U 3 1 6178EA33
+P 7150 3700
+F 0 "U37" H 7150 4025 50  0000 C CNN
+F 1 "74HC32" H 7150 3934 50  0000 C CNN
+F 2 "" H 7150 3700 50  0001 C CNN
+F 3 "" H 7150 3700 50  0001 C CNN
+	3    7150 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4100 7650 4300
+Wire Wire Line
+	7550 3100 7550 3900
+Wire Wire Line
+	7550 3900 7750 3900
+Connection ~ 7550 3100
+Wire Wire Line
+	7550 3100 7450 3100
+Wire Wire Line
+	7750 4100 7650 4100
+Wire Wire Line
+	7650 4300 7450 4300
+Text Label 6550 4400 0    50   ~ 0
+A3#
+Text Label 6550 4200 0    50   ~ 0
+A2
+Wire Wire Line
+	6550 4200 6850 4200
+Wire Wire Line
+	6550 4400 6850 4400
+$Comp
+L Perso:74HC32 U37
+U 4 1 617E9ADB
+P 8050 4000
+F 0 "U37" H 8050 4325 50  0000 C CNN
+F 1 "74HC32" H 8050 4234 50  0000 C CNN
+F 2 "" H 8050 4000 50  0001 C CNN
+F 3 "" H 8050 4000 50  0001 C CNN
+	4    8050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Perso:74HC32 U37
+U 5 1 617EBF9A
+P 4350 6750
+F 0 "U37" H 4580 6796 50  0000 L CNN
+F 1 "74HC32" H 4580 6705 50  0000 L CNN
+F 2 "" H 4350 6750 50  0001 C CNN
+F 3 "" H 4350 6750 50  0001 C CNN
+	5    4350 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Perso:74HC32 U38
+U 1 1 617F2964
+P 7150 4300
+F 0 "U38" H 7150 4625 50  0000 C CNN
+F 1 "74HC32" H 7150 4534 50  0000 C CNN
+F 2 "" H 7150 4300 50  0001 C CNN
+F 3 "" H 7150 4300 50  0001 C CNN
+	1    7150 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4500 7750 4500
+Wire Wire Line
+	7650 4700 7650 4900
+Wire Wire Line
+	7550 3900 7550 4500
+Connection ~ 7550 3900
+Wire Wire Line
+	7650 4700 7750 4700
+Wire Wire Line
+	7650 4900 7450 4900
+Text Label 6550 5000 0    50   ~ 0
+A3#
+Text Label 6550 4800 0    50   ~ 0
+A2#
+Wire Wire Line
+	6550 4800 6850 4800
+Wire Wire Line
+	6550 5000 6850 5000
+Text Label 8750 4000 2    50   ~ 0
+DAC2_EN#
+Wire Wire Line
+	8750 4000 8350 4000
+Text Label 8750 4600 2    50   ~ 0
+DAC3_EN#
+Wire Wire Line
+	8750 4600 8350 4600
+$Comp
+L Perso:74HC32 U38
+U 2 1 619C1D86
+P 8050 4600
+F 0 "U38" H 8050 4925 50  0000 C CNN
+F 1 "74HC32" H 8050 4834 50  0000 C CNN
+F 2 "" H 8050 4600 50  0001 C CNN
+F 3 "" H 8050 4600 50  0001 C CNN
+	2    8050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Perso:74HC32 U38
+U 3 1 619C489B
+P 7150 4900
+F 0 "U38" H 7150 5225 50  0000 C CNN
+F 1 "74HC32" H 7150 5134 50  0000 C CNN
+F 2 "" H 7150 4900 50  0001 C CNN
+F 3 "" H 7150 4900 50  0001 C CNN
+	3    7150 4900
+	1    0    0    -1  
+$EndComp
+Text Label 6550 1800 0    50   ~ 0
+A4#
+Wire Wire Line
+	6550 1800 6850 1800
+Wire Wire Line
+	6850 2000 6550 2000
+Text Label 6550 2000 0    50   ~ 0
+EN
+Wire Wire Line
+	7650 2100 7650 1900
+Wire Wire Line
+	7650 1900 7450 1900
+Wire Wire Line
+	7650 2100 7750 2100
+Wire Wire Line
+	7750 2300 7650 2300
+Wire Wire Line
+	7650 2300 7650 2500
+Connection ~ 7650 2500
+Text Label 8750 2200 2    50   ~ 0
+DAC4_EN#
+Wire Wire Line
+	8750 2200 8350 2200
+$Comp
+L Perso:74HC32 U38
+U 5 1 61A90553
+P 5400 6750
+F 0 "U38" H 5630 6796 50  0000 L CNN
+F 1 "74HC32" H 5630 6705 50  0000 L CNN
+F 2 "" H 5400 6750 50  0001 C CNN
+F 3 "" H 5400 6750 50  0001 C CNN
+	5    5400 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 7250 5400 7350
+Text HLabel 5400 7350 3    50   Input ~ 0
+GND
+Text HLabel 5400 6050 1    50   Input ~ 0
+VCC
+$Comp
+L Device:C C?
+U 1 1 61ABDC45
+P 5750 6100
+AR Path="/60F2447D/61ABDC45" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61663605/61ABDC45" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61ABDC45" Ref="C?"  Part="1" 
+AR Path="/60F234C1/616ECCD6/61ABDC45" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61687857/6175863C/61ABDC45" Ref="C43"  Part="1" 
+F 0 "C43" V 5498 6100 50  0000 C CNN
+F 1 "100n" V 5589 6100 50  0000 C CNN
+F 2 "" H 5788 5950 50  0001 C CNN
+F 3 "~" H 5750 6100 50  0001 C CNN
+	1    5750 6100
+	0    1    1    0   
+$EndComp
+Text HLabel 6000 6100 2    50   Input ~ 0
+GND
+Wire Wire Line
+	5900 6100 6000 6100
+Wire Wire Line
+	5600 6100 5400 6100
+Wire Wire Line
+	5400 6100 5400 6250
+Wire Wire Line
+	5400 6050 5400 6100
+Connection ~ 5400 6100
+Wire Wire Line
+	4350 7250 4350 7350
+Text HLabel 4350 7350 3    50   Input ~ 0
+GND
+Text HLabel 4350 6050 1    50   Input ~ 0
+VCC
+$Comp
+L Device:C C?
+U 1 1 61ACE7C1
+P 4700 6100
+AR Path="/60F2447D/61ACE7C1" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61663605/61ACE7C1" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61ACE7C1" Ref="C?"  Part="1" 
+AR Path="/60F234C1/616ECCD6/61ACE7C1" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61687857/6175863C/61ACE7C1" Ref="C42"  Part="1" 
+F 0 "C42" V 4448 6100 50  0000 C CNN
+F 1 "100n" V 4539 6100 50  0000 C CNN
+F 2 "" H 4738 5950 50  0001 C CNN
+F 3 "~" H 4700 6100 50  0001 C CNN
+	1    4700 6100
+	0    1    1    0   
+$EndComp
+Text HLabel 4950 6100 2    50   Input ~ 0
+GND
+Wire Wire Line
+	4850 6100 4950 6100
+Wire Wire Line
+	4550 6100 4350 6100
+Wire Wire Line
+	4350 6100 4350 6250
+Wire Wire Line
+	4350 6050 4350 6100
+Connection ~ 4350 6100
+Wire Wire Line
+	3300 7250 3300 7350
+Text HLabel 3300 7350 3    50   Input ~ 0
+GND
+Text HLabel 3300 6050 1    50   Input ~ 0
+VCC
+$Comp
+L Device:C C?
+U 1 1 61AE7653
+P 3650 6100
+AR Path="/60F2447D/61AE7653" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61663605/61AE7653" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61AE7653" Ref="C?"  Part="1" 
+AR Path="/60F234C1/616ECCD6/61AE7653" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61687857/6175863C/61AE7653" Ref="C41"  Part="1" 
+F 0 "C41" V 3398 6100 50  0000 C CNN
+F 1 "100n" V 3489 6100 50  0000 C CNN
+F 2 "" H 3688 5950 50  0001 C CNN
+F 3 "~" H 3650 6100 50  0001 C CNN
+	1    3650 6100
+	0    1    1    0   
+$EndComp
+Text HLabel 3900 6100 2    50   Input ~ 0
+GND
+Wire Wire Line
+	3800 6100 3900 6100
+Wire Wire Line
+	3500 6100 3300 6100
+Wire Wire Line
+	3300 6100 3300 6250
+Wire Wire Line
+	3300 6050 3300 6100
+Connection ~ 3300 6100
+Wire Wire Line
+	2250 7250 2250 7350
+Text HLabel 2250 7350 3    50   Input ~ 0
+GND
+Text HLabel 2250 6050 1    50   Input ~ 0
+VCC
+$Comp
+L Device:C C?
+U 1 1 61AECC20
+P 2600 6100
+AR Path="/60F2447D/61AECC20" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61663605/61AECC20" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61AECC20" Ref="C?"  Part="1" 
+AR Path="/60F234C1/616ECCD6/61AECC20" Ref="C?"  Part="1" 
+AR Path="/60F234C1/61687857/6175863C/61AECC20" Ref="C40"  Part="1" 
+F 0 "C40" V 2348 6100 50  0000 C CNN
+F 1 "100n" V 2439 6100 50  0000 C CNN
+F 2 "" H 2638 5950 50  0001 C CNN
+F 3 "~" H 2600 6100 50  0001 C CNN
+	1    2600 6100
+	0    1    1    0   
+$EndComp
+Text HLabel 2850 6100 2    50   Input ~ 0
+GND
+Wire Wire Line
+	2750 6100 2850 6100
+Wire Wire Line
+	2450 6100 2250 6100
+Wire Wire Line
+	2250 6100 2250 6250
+Wire Wire Line
+	2250 6050 2250 6100
+Connection ~ 2250 6100
+Text Label 1450 1900 2    50   ~ 0
+DAC0_EN#
+Wire Wire Line
+	1450 1900 1050 1900
+Text Label 1450 2000 2    50   ~ 0
+DAC1_EN#
+Wire Wire Line
+	1450 2000 1050 2000
+Text Label 1450 2100 2    50   ~ 0
+DAC2_EN#
+Wire Wire Line
+	1450 2100 1050 2100
+Text Label 1450 2200 2    50   ~ 0
+DAC3_EN#
+Wire Wire Line
+	1450 2200 1050 2200
+Text Label 1450 2300 2    50   ~ 0
+DAC4_EN#
+Wire Wire Line
+	1450 2300 1050 2300
+Text HLabel 1050 1900 0    50   Output ~ 0
+DAC0_EN#
+Text HLabel 1050 2000 0    50   Output ~ 0
+DAC1_EN#
+Text HLabel 1050 2100 0    50   Output ~ 0
+DAC2_EN#
+Text HLabel 1050 2200 0    50   Output ~ 0
+DAC3_EN#
+Text HLabel 1050 2300 0    50   Output ~ 0
+DAC4_EN#
+$EndSCHEMATC

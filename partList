@@ -1,0 +1,16 @@
+Z84C0006 => Z80 CMOS 6MHz
+AS 6C62256-55 => SRAM 256kb
+39SF01070-4C => 1Mb NOR Flash (on utilisera que 256Kb je pense)
+Quartz 6MHz => Pour Z80, CTC et UART
+74HC244 => INPUT ports
+74HC374 => OUTPUT ports
+TL16C550 => UART
+74HC137 => Demux (pour control OE des I/O et controle des différents PORTS I/O)
+28C64-150 => EEPROM (pour l'identification des interruptions (un input différent par IT))
+Z84C3006 => CTC timer/counter
+
+
+To buy :
+- List on reichelt
+- ADC0808 x1
+- 

@@ -1,0 +1,64 @@
+include "zcomputer.asm"
+
+DATA1:	EQU 0x1000
+DATA2:	EQU 0x2000
+DATA3:	EQU 0x3521
+DATA4:	EQU 0x5926
+
+	LD SP, STACK
+
+	; Init all memory locations
+	LD A, 0
+	LD HL, DATA1
+	LD (HL), A
+	LD HL, DATA2
+	LD (HL), A
+	LD HL, DATA3
+	LD (HL), A
+	LD HL, DATA4
+	LD (HL), A
+START:
+	; Output all ports values
+	LD HL, DATA1
+	LD A, (HL)
+	OUT (PORTD_OUT), A
+
+	LD HL, DATA2
+	LD A, (HL)
+	OUT (PORTC_OUT), A
+
+	LD HL, DATA3
+	LD A, (HL)
+	OUT (PORTB_OUT), A
+
+	LD HL, DATA4
+	LD A, (HL)
+	OUT (PORTA_OUT), A
+
+	; INC 32 bits counter
+	; then tempo
+	LD HL, DATA1
+	INC (HL)
+	JP NZ, START_TEMPO
+
+	LD HL, DATA2
+	INC (HL)
+	JP NZ, START_TEMPO
+
+	LD HL, DATA3
+	INC (HL)
+	JP NZ, START_TEMPO
+
+	JP NZ, DATA4
+	INC (HL)
+
+START_TEMPO:
+	LD A, 0
+	LD C, 0
+TEMPO:
+	INC A
+	JP NZ, TEMPO
+TEMPO2:
+	INC C
+	JP NZ,TEMPO
+	JP START
