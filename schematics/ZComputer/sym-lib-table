@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "ZComputer-rescue")(type "Legacy")(uri "${KIPRJMOD}/ZComputer-rescue.lib")(options "")(descr ""))
+)

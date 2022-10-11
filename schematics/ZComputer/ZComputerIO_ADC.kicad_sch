@@ -1,0 +1,15 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid b85ac7a3-dcfd-4128-98ff-a46293d4dc33)
+
+  (paper "A4")
+
+  (title_block
+    (company "Maxime Chretien")
+    (comment 1 "mchretien@linuxmail.org")
+  )
+
+  (lib_symbols
+  )
+
+)
