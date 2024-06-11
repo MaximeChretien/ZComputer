@@ -1,2 +1,4 @@
 *.bak
 schematics*/*/*-backups
+schematics*/*/plots
+fp-info-cache
