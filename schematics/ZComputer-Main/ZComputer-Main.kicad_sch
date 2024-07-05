@@ -5655,6 +5655,7 @@
 	)
 	(label "D4"
 		(at 33.02 66.04 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5742,6 +5743,7 @@
 	)
 	(label "D7"
 		(at 33.02 73.66 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5917,6 +5919,7 @@
 	)
 	(label "D2"
 		(at 33.02 60.96 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5971,6 +5974,7 @@
 	)
 	(label "D3"
 		(at 33.02 63.5 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6223,6 +6227,7 @@
 	)
 	(label "D1"
 		(at 33.02 58.42 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6244,6 +6249,7 @@
 	)
 	(label "D6"
 		(at 33.02 71.12 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6430,6 +6436,7 @@
 	)
 	(label "D5"
 		(at 33.02 68.58 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6594,6 +6601,7 @@
 	)
 	(label "D0"
 		(at 33.02 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6787,7 +6795,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x34_P2.54mm_Horizontal"
 			(at 45.72 91.44 0)
 			(effects
 				(font
@@ -7052,7 +7060,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 243.84 75.8952 0)
 			(effects
 				(font
@@ -7119,7 +7127,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket_LongPads"
 			(at 238.76 93.98 0)
 			(effects
 				(font
